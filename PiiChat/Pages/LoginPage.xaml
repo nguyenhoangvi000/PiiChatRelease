@@ -7,11 +7,40 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <CommonNavigationTransitionInfo></CommonNavigationTransitionInfo>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
     <Page.Resources>
         <Color x:Key="Color1">#002EA1FC</Color>
     </Page.Resources>
 
-    <Grid Background="White" d:IsLocked="True">
-        
-    </Grid>
+    <StackPanel Padding="50" Margin="0" Background="White">
+        <Image x:Name="image" Height="155" Source="/Assets/Square150x150Logo.png"/>
+        <TextBox x:Name="txtUsername" PlaceholderText="Tài khoản" Height="32"  TextWrapping="Wrap" Text="" 
+                     VerticalAlignment="Top" InputScope="Text" BorderBrush="#FFE2DBDB" 
+                     BorderThickness="0,0,0,1"/>
+        <TextBox x:Name="txtPassword" PlaceholderText="Mật khẩu" Height="32"  TextWrapping="Wrap" Text="" 
+                     VerticalAlignment="Top"  InputScope="Password" BorderThickness="0,0,0,1" 
+                     BorderBrush="#FFE2DBDB"/>
+
+        <Button Margin="50,0" x:Name="btnLogin" Content="Đăng nhập" HorizontalAlignment="Stretch" Height="36" 
+                    VerticalAlignment="Bottom" Background="#2EA1FC" Foreground="#FFF0F0F0" 
+                   />
+        <CheckBox x:Name="ckKeepLogin" Content="Duy trì đăng nhập"  VerticalAlignment="Stretch" Width="185" 
+                      d:LayoutOverrides="TopPosition, BottomPosition"/>
+
+        <TextBlock x:Name="txtInfo" Height="24"  TextWrapping="Wrap" Text="Bạn chưa có tài khoản" HorizontalAlignment="Left" FontSize="13"  Width="148"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="txtInfoRegister" Height="24" TextWrapping="Wrap" Text="Đăng kí ngay," 
+                       VerticalAlignment="Bottom" Foreground="#FF2EA1FC" FontSize="13" HorizontalAlignment="Left" Width="83" Tapped="txtInfoRegister_Tapped"/>
+
+            <TextBlock x:Name="txtInfoForgotPass" Height="24"  Text="Lấy lại mật khẩu"  Width="94" Foreground="#FF2EA1FC" FontSize="13"/>
+        </StackPanel>
+    </StackPanel>
 </Page>

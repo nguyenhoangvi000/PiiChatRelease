@@ -55,7 +55,7 @@ namespace PiiChat
                     rootFrame.Navigate(typeof(WaitingPage));
                     break;
                 case PageType.REGISTER_PAGE:
-                    rootFrame.Navigate(typeof(LoginPage));
+                    rootFrame.Navigate(typeof(RegisterPage));
                     break;
                 case PageType.CONVERSATION_PAGE:
                     rootFrame.Navigate(typeof(LoginPage));

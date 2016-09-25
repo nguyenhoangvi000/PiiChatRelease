@@ -20,17 +20,11 @@ namespace PiiChat.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class LoginPage : Page
+    public sealed partial class ChatPage : Page
     {
-        public LoginPage()
+        public ChatPage()
         {
             this.InitializeComponent();
-        }
-
-        private void txtInfoRegister_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            AppManager manager = AppManager.getInstance();
-            manager.Navigate(AppManager.PageType.REGISTER_PAGE);
         }
     }
 }
