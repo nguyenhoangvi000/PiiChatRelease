@@ -98,6 +98,8 @@
     </Compile>
     <Compile Include="AppManager.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Models\GroupInfoList.cs" />
+    <Compile Include="Models\Header.cs" />
     <Compile Include="Models\UserInfo.cs" />
     <Compile Include="Pages\ChatPage.xaml.cs">
       <DependentUpon>ChatPage.xaml</DependentUpon>

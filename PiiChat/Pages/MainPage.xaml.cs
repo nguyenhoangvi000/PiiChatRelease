@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PiiChat.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,9 +23,43 @@ namespace PiiChat.Pages
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public List<string> contactListRecent;
         public MainPage()
         {
             this.InitializeComponent();
+            contactListRecent = new List<string>()
+            {
+                "ABC",
+                "DEF",
+                "ABC",
+                "DEF",
+                "ABC",
+                "DEF",
+                "ABC",
+                "DEF"
+            };
+            ListViewContact.ItemsSource = contactListRecent;
+            ListViewContacts1.ItemsSource = contactListRecent;
+            //ListViewContacts.ItemsSource = contactListRecent;
+            MyItems.Source = Header.GetItemsGrouped();
+        }
+
+        private void ListViewContacts_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            AppManager manager = AppManager.getInstance();
+            manager.Navigate(AppManager.PageType.CONVERSATION_PAGE);
+        }
+
+        private void ListViewContacts_Tapped_1(object sender, TappedRoutedEventArgs e)
+        {
+            AppManager manager = AppManager.getInstance();
+            manager.Navigate(AppManager.PageType.CONVERSATION_PAGE);
+        }
+
+        private void ListViewContact_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            AppManager manager = AppManager.getInstance();
+            manager.Navigate(AppManager.PageType.CONVERSATION_PAGE);
         }
     }
 }

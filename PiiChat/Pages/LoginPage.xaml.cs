@@ -32,5 +32,11 @@ namespace PiiChat.Pages
             AppManager manager = AppManager.getInstance();
             manager.Navigate(AppManager.PageType.REGISTER_PAGE);
         }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            AppManager manager = AppManager.getInstance();
+            manager.Navigate(AppManager.PageType.MAIN_PAGE);
+        }
     }
 }

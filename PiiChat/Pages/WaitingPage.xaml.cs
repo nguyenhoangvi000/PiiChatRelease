@@ -29,19 +29,19 @@ namespace PiiChat.Pages
             this.InitializeComponent();
         }
 
-        private async void Page_Loaded(object sender, RoutedEventArgs e)
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            var user = await API.getInstance().getUser();
+            //var user = await API.getInstance().getUser();
             AppManager manager = AppManager.getInstance();
-            if (user == null)
-            {
-                manager.Navigate(AppManager.PageType.LOGIN_PAGE);
-            }
-            else
-            {
-                manager.Navigate(AppManager.PageType.MAIN_PAGE);
-            }
-            
+            //if (user == null)
+            //{
+            //    manager.Navigate(AppManager.PageType.LOGIN_PAGE);
+            //}
+            //else
+            //{
+            manager.Navigate(AppManager.PageType.LOGIN_PAGE);
+            //}
+
         }
     }
 }

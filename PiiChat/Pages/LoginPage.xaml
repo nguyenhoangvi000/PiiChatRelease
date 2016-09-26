@@ -30,7 +30,7 @@
                      BorderBrush="#FFE2DBDB"/>
 
         <Button Margin="50,0" x:Name="btnLogin" Content="Đăng nhập" HorizontalAlignment="Stretch" Height="36" 
-                    VerticalAlignment="Bottom" Background="#2EA1FC" Foreground="#FFF0F0F0" 
+                    VerticalAlignment="Bottom" Background="#2EA1FC" Foreground="#FFF0F0F0" Click="btnLogin_Click" 
                    />
         <CheckBox x:Name="ckKeepLogin" Content="Duy trì đăng nhập"  VerticalAlignment="Stretch" Width="185" 
                       d:LayoutOverrides="TopPosition, BottomPosition"/>
