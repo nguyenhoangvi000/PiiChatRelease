@@ -22,7 +22,7 @@
                              Height="Auto"
                              HorizontalAlignment="Center"
                              VerticalAlignment="Center"
-                             Source="Assets\LockScreenLogo.scale-200.png"
+                             Source="/Assets/Square150x150Logo.png"
                              Margin="10"/>
                         </StackPanel>
                     </ControlTemplate>
@@ -34,7 +34,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="8*"/>
+            <RowDefinition Height="10*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -92,7 +92,7 @@
                                         <Setter Property="Template">
                                             <Setter.Value>
                                                 <ControlTemplate TargetType="ListViewItem">
-                                                    <Image Source="Assets\Square150x150Logo.scale-200.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40"></Image>
+                                                    <Image Source="/Assets/Square150x150Logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="40" Height="40"></Image>
                                                 </ControlTemplate>
                                             </Setter.Value>
                                         </Setter>
@@ -125,7 +125,7 @@
                                     <Setter Property="ContentTemplate">
                                         <Setter.Value>
                                             <DataTemplate>
-                                                <Image Source="Assets\Square150x150Logo.scale-200.png"></Image>
+                                                <Image Source="/Assets/Square150x150Logo.png"></Image>
                                             </DataTemplate>
                                         </Setter.Value>
                                     </Setter>
@@ -183,7 +183,7 @@
                                         </Grid.ColumnDefinitions>
                                         <Ellipse Grid.Column="1" Width="45" Height="45" MaxHeight="45" MinHeight="45">
                                             <Ellipse.Fill>
-                                                <ImageBrush ImageSource="Assets\StoreLogo.png" />
+                                                <ImageBrush ImageSource="/Assets/Square150x150Logo.png" />
                                             </Ellipse.Fill>
                                         </Ellipse>
                                         <Grid x:Name="ContentMessage" Padding="0,0,5,0" CornerRadius="5" Grid.Column="0" BorderBrush="#CED6DA" BorderThickness="1" Background="#ADD8E6" Margin="0,0,5,0">
@@ -213,10 +213,10 @@
                     <ColumnDefinition  Width="7*"/>
                     <ColumnDefinition Width="1.5*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Background="Transparent"  VerticalAlignment="Center" FontFamily="Segoe UI Symbol" HorizontalAlignment="Center" Width="Auto" Content="&#xE11D;"></Button>
-                <Button Grid.Column="1" Background="Transparent" VerticalAlignment="Center" FontFamily="Segoe UI Symbol" HorizontalAlignment="Center" Width="Auto" Content="&#xE11D;"></Button>
-                <TextBox BorderThickness="0" x:Name="txtMessage" VerticalAlignment="Stretch" Grid.Column="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" ></TextBox>
-                <Button Background="Transparent" BorderThickness="0"  Grid.Column="3" FontSize="14"  Content="&#xE122;" FontFamily="Segoe UI Symbol" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,0,0,0"/>
+                <Button Grid.Column="1" Background="Transparent" Click="ShowEmoji" VerticalAlignment="Center" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Center" Width="Auto" Content="&#xE76E;"></Button>
+                <Button Grid.Column="0" Background="Transparent" Click="SelectImage" VerticalAlignment="Center" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Center" Width="Auto" Content="&#xE109;"></Button>
+                <TextBox BorderThickness="0" x:Name="txtMessage" VerticalAlignment="Stretch" Grid.Column="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Width="Auto" GotFocus="txtMessage_GotFocus" ></TextBox>
+                <Button Background="Transparent" BorderThickness="0" Click="SendMessage" Grid.Column="3" FontSize="14"  Content="&#xE725;" FontFamily="Segoe MDL2 Assets" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,0,0,0"/>
             </Grid>
         </Border>
 

@@ -33,7 +33,7 @@
             <Setter Property="Padding" Value="{ThemeResource PivotHeaderItemMargin}" />
             <Setter Property="MinHeight" Value="65" />
             <Setter Property="Width" Value="Auto"/>
-            <Setter Property="MinWidth" Value="163"></Setter>
+            <Setter Property="MinWidth" Value="110"></Setter>
             <Setter Property="MaxWidth" Value="200"></Setter>
             <Setter Property="VerticalContentAlignment" Value="Center" />
             <Setter Property="IsTabStop" Value="False" />
@@ -207,7 +207,7 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Border Grid.Column="0">
-                                        <Ellipse Grid.Column="0" Width="60" Height="60" MinWidth="40" MinHeight="40" >
+                                        <Ellipse Grid.Column="0" Width="55" Height="55" MinWidth="40" MinHeight="40" >
                                             <Ellipse.Fill>
                                                 <ImageBrush AlignmentX="Center" AlignmentY="Center" ImageSource="/Assets/Square150x150Logo.png" />
                                             </Ellipse.Fill>
@@ -263,7 +263,7 @@
                                         <ColumnDefinition Width="1*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Border Grid.Column="0">
-                                        <Ellipse Grid.Column="0" Width="60" Height="60" MinWidth="40" MinHeight="40" >
+                                        <Ellipse Grid.Column="0" Width="55" Height="55" MinWidth="40" MinHeight="40" >
                                             <Ellipse.Fill>
                                                 <ImageBrush AlignmentX="Center" AlignmentY="Center" ImageSource="/Assets/Square150x150Logo.png" />
                                             </Ellipse.Fill>
@@ -320,7 +320,7 @@
                                         <ColumnDefinition Width="1*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
                                     <Border Grid.Column="0">
-                                        <Ellipse Grid.Column="0" Width="60" Height="60" MinWidth="40" MinHeight="40" >
+                                        <Ellipse Grid.Column="0" Width="55" Height="55" MinWidth="40" MinHeight="40" >
                                             <Ellipse.Fill>
                                                 <ImageBrush AlignmentX="Center" AlignmentY="Center" ImageSource="/Assets/Square150x150Logo.png" />
                                             </Ellipse.Fill>
